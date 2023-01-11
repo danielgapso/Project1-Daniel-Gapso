@@ -22,4 +22,5 @@ const makeTable = () => {//a function that holds the recived values and mapping 
            `;
     });
    document.getElementById("mySticky").innerHTML =data;//writes down the recived values
+ 
 };
