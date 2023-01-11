@@ -15,14 +15,15 @@ body{
     justify-content: center;
     align-items: center;
 }
-#mySticky{
-    margin: auto;
+/*#mySticky{
+    
+    position:relative;
     background-image: url(/img/notebg.png);
     height: 250px;
-    background-repeat: repeat-y;
+    width: 200px;
     display: flex;
     align-items: center;
-    overflow: auto;
+    flex-direction: column;
     padding: 10px;
 }
-
+*/
