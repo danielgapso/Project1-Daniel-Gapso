@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+body{
+    background-image: url(/img/tile.jpg);
+}
+.myPage{
+    text-align: center;
+    margin: auto;
+    background-image: url(/img/formbg.jpg);
+    height: 125px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mySticky{
+    margin: auto;
+    background-image: url(/img/notebg.png);
+    height: 250px;
+    background-repeat: repeat-y;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    padding: 10px;
+}
+
