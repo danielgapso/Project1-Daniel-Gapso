@@ -6,7 +6,6 @@ body{
     background-image: url(/img/tile.jpg);
 }
 .myPage{
-    text-align: center;
     margin: auto;
     background-image: url(/img/formbg.jpg);
     height: 125px;
@@ -15,15 +14,55 @@ body{
     justify-content: center;
     align-items: center;
 }
-/*#mySticky{
-    
-    position:relative;
+.myNote {
     background-image: url(/img/notebg.png);
-    height: 250px;
+    height: 230px;
     width: 200px;
+    transition: opacity 1s ease-in-out;
+    animation: fadeIn 1s;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
+    float: left;
+    overflow: auto;
+    
+
 }
-*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.myWrite{
+    direction: rtl;
+    position: relative;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.myDate{
+     display: flex;
+     align-items: flex-end;
+}
+.myTime{
+     display: flex;
+     align-items: flex-end;
+}
+.deleteButton{
+    position: relative;
+    width: 10px;
+    height:10px;
+}
+.material-symbols-outlined::before{
+  display:none ;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.material-symbols-outlined:hover{
+display: inline;
+}
