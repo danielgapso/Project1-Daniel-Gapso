@@ -13,13 +13,14 @@ const makeTable = () => {
     myTasks.push(note);
     document.getElementById("myForm").reset();
     localStorage.setItem("myData", JSON.stringify(myTasks));
+    
 
     const tableData = document.getElementById("mySticky");
     var toHtml = "";
     myTasks.map((item) => {
         toHtml += `
-                <div class="myNote">
-                <span class="material-symbols-outlined" id="closeButton">close</span>
+                <div id="myNote">
+                <span class="material-symbols-outlined" onclick="deleteItem()" id="deleteButton">close</span>
                 <div class="myWrite">${item.taskWrite}</div>
                 <div class="myDate">${item.taskDate}</div>
                 <div class="myTime">${item.taskTime}</div> 
@@ -28,4 +29,16 @@ const makeTable = () => {
     });
     tableData.innerHTML = toHtml;
 };
+/*const removeNote = () => {
+const element = document.getElementById("myNote");
+  element.remove();
+  localStorage.removeItem;("myData");
+};*/
 
+
+
+function deleteItem() {
+  const element = document.getElementById("myNote");
+  element.remove();
+ localStorage.removeItem("myData");
+}
