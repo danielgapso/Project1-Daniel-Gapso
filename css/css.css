@@ -46,7 +46,7 @@ body{
 #deleteButton{
 	padding-top: 20px;	
 	padding-left: 150px;
-	position: relative;
+	position: sticky;
 	display: none;
 }
 #deleteButton:hover{
@@ -55,15 +55,16 @@ body{
 .myWrite{
     position: relative;
     padding: 20px;
+    margin: auto;
+
 }
 .myDate{
-    margin-top: 15%;
+     margin-top: 15%;
      display: flex;
      align-items: flex-end;
      padding: 5px;
 }
 .myTime{
-     
      display: flex;
      align-items: flex-end;
      padding: 5px;
