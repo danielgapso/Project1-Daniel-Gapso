@@ -21,7 +21,7 @@ const makeTable = () => {
                 <div id="myNote">
                 <span class="material-symbols-outlined" onclick="removeNote()" id="deleteButton">close</span>
                 <div class="myWrite">${item.taskWrite}</div>
-                <div class="myDate">${item.taskDate}</div>
+                <div class="myDate">${newDate(item.taskDate)}</div>
                 <div class="myTime">${item.taskTime}</div> 
                 </div>
            `;
@@ -32,4 +32,8 @@ const makeTable = () => {
   const element = document.getElementById("myNote");
   element.remove();
   localStorage.removeItem("myData");
+};
+const newDate =(taskDate)=>{
+  const ilDate=taskDate.split("-");
+  return `${ilDate[2]}/${ilDate[1]}/${ilDate[0]}`;
 };
