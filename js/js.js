@@ -2,10 +2,10 @@ var myTasks=[];
 
 const checkForData = () => {
     myTasks=JSON.parse(localStorage.getItem("myData"));
-    makeTable();
+    makeDiv();
   };
 
-const makeTable = () => {
+const makeDiv = () => {
     const note = new Object(); 
     note.taskWrite = document.getElementById("taskWrite").value;
     note.taskDate = document.getElementById("taskDate").value;
@@ -14,7 +14,7 @@ const makeTable = () => {
     document.getElementById("myForm").reset();
     localStorage.setItem("myData", JSON.stringify(myTasks));
 
-    const tableData = document.getElementById("mySticky");
+    const divData = document.getElementById("mySticky");
     var toHtml = "";
     myTasks.map((item) => {
         toHtml += `
@@ -26,7 +26,7 @@ const makeTable = () => {
                 </div>
            `;
     });
-    tableData.innerHTML = toHtml;
+    divData.innerHTML = toHtml;
 };
   const removeNote = ()=> {
   const element = document.getElementById("myNote");
