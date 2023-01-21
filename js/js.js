@@ -12,10 +12,10 @@ const removeNote = (event) => {
 };
 const checkForData = () => {
   if(localStorage.getItem("myData")){
-  myTasks=JSON.parse(localStorage.getItem("myData"));
-  insertData ();
-  }
-};
+    myTasks=JSON.parse(localStorage.getItem("myData"));
+    insertData ();
+   }
+  };
   const insertData  = () => {
   const divData = document.getElementById("mySticky");
   var toHtml = "";
@@ -31,7 +31,7 @@ const checkForData = () => {
   });
   divData.innerHTML = toHtml;
 };
-checkForData()
+checkForData();
 const makeDiv = () => {
   const note = new Object(); 
   note.taskWrite = document.getElementById("taskWrite").value;
