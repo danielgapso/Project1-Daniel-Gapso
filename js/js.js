@@ -32,7 +32,6 @@ const checkForData = () => {
   divData.innerHTML = toHtml;
 };
 checkForData()
-
 const makeDiv = () => {
   const note = new Object(); 
   note.taskWrite = document.getElementById("taskWrite").value;
@@ -41,4 +40,5 @@ const makeDiv = () => {
   myTasks.push(note);
   document.getElementById("myForm").reset();
   localStorage.setItem("myData", JSON.stringify(myTasks));
+  insertData ();
 };
