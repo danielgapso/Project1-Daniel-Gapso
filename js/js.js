@@ -23,7 +23,7 @@ const checkForData = () => {
       toHtml += `
               <div id="myNote">
               <span class="material-symbols-outlined" onclick="removeNote(event)" id="deleteButton">close</span>
-              <div class="myWrite">${item.taskWrite}</div>
+              <textarea readonly class="myWrite">${item.taskWrite}</textarea>
               <div class="myDate">${newDate(item.taskDate)}</div>
               <div class="myTime">${item.taskTime}</div> 
               </div>

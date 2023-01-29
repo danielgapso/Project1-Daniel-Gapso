@@ -19,8 +19,6 @@ body{
     height: 230px;
     width: 200px;
     display: flex;
-    float: left;
-    overflow: auto;
     transition: opacity 1s ease-in-out;
     animation: fadeIn 1s;
     display: inline-block;
@@ -44,9 +42,9 @@ body{
     'opsz' 48
   }
 #deleteButton{
-	padding-top: 20px;	
+	padding-top: 25px;	
 	padding-left: 150px;
-	position: sticky;
+	position: fixed;
 	display: none;
 }
 #deleteButton:hover{
@@ -54,18 +52,23 @@ body{
 }
 .myWrite{
     position: relative;
-    padding: 20px;
-    margin: auto;
-
+    padding-bottom: 10px;
+    background: none;
+    height: 35%;
+    width: 80%;
+    border: none;
+    resize: none;
+    margin-top: 25%;
+    margin-left: 10px;
 }
 .myDate{
-     margin-top: 15%;
+    margin-top: 15%;
      display: flex;
-     align-items: flex-end;
+     align-self: flex-end;
      padding: 5px;
 }
 .myTime{
      display: flex;
-     align-items: flex-end;
+     align-self: flex-end;
      padding: 5px;
 }
