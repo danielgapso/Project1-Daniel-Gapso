@@ -30,7 +30,7 @@ const checkForData = () => {
          `;
   });
   divData.innerHTML = toHtml;
-};
+  };
 checkForData();
 const makeDiv = () => {
   const note = new Object(); 
