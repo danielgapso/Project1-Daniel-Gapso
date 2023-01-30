@@ -8,7 +8,7 @@ body{
 .myPage{
     margin: auto;
     background-image: url(/img/formbg.jpg);
-    height: 125px;
+    height: 220px;
     width: 650px;
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@ body{
 #deleteButton{
 	padding-top: 25px;	
 	padding-left: 150px;
-	position: fixed;
+	position: absolute;
 	display: none;
 }
 #deleteButton:hover{
