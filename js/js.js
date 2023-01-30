@@ -6,8 +6,9 @@ const newDate =(taskDate)=>{
 };
 const removeNote = (event) => {
   let element = event.target.parentNode;
+  let index = Array.from(element.parentNode.children).indexOf(element);
+  myTasks.splice(index, 1);
   element.remove();
-  myTasks = myTasks.filter((task)=> task.taskWrite !== element.querySelector('.myWrite').textContent);
   localStorage.setItem("myData", JSON.stringify(myTasks));
 };
 const checkForData = () => {
