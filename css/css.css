@@ -18,7 +18,6 @@ body{
     background-image: url(../img/notebg.png);
     height: 230px;
     width: 200px;
-    display: flex;
     transition: opacity 1s ease-in-out;
     animation: fadeIn 1s;
     display: inline-block;
