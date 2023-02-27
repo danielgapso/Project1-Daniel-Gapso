@@ -3,11 +3,11 @@ h1{
     font-family: 'Permanent Marker', cursive;
 }
 body{
-    background-image: url(/img/tile.jpg);
+    background-image: url(../img/tile.jpg);
 }
 .myPage{
     margin: auto;
-    background-image: url(/img/formbg.jpg);
+    background-image: url(../img/formbg.jpg);
     height: 220px;
     width: 650px;
     display: flex;
@@ -15,7 +15,7 @@ body{
     align-items: center;
 }
 #myNote {
-    background-image: url(/img/notebg.png);
+    background-image: url(../img/notebg.png);
     height: 230px;
     width: 200px;
     display: flex;
